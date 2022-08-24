@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@color/purple_700"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="48dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theory of automata"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demonstration of RegEx with help Of Java"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:elevation="26dp"
+        android:background="@drawable/card_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="36dp"
+            android:text="Form to check RegEx "
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="26dp"
+                android:layout_weight="12"
+                >
+                <EditText
+                    android:id="@+id/editReg1"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_card_background"
+                    android:drawableTint="@color/purple_700"
+                    android:layout_marginRight="12dp"
+                    android:hint="Phone NO: Eg +92xxxxxxxxxxx"
+                    android:layout_weight="10"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selection"
+                    android:text="Check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtReg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="InValid"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="26dp"
+                android:layout_weight="12"
+                >
+                <EditText
+                    android:id="@+id/editReg2"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_card_background"
+                    android:drawableTint="@color/purple_700"
+                    android:layout_marginRight="12dp"
+                    android:hint="any String(Only[a-z]and[A-Z]) / Must have YY int it "
+                    android:layout_weight="10"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selection"
+                    android:text="Check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtReg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="InValid"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="26dp"
+                android:layout_weight="12"
+                >
+                <EditText
+                    android:id="@+id/editReg3"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_card_background"
+                    android:drawableTint="@color/purple_700"
+                    android:layout_marginRight="12dp"
+                    android:hint="Lang:{a,b} / String have Even Number of aa`s "
+                    android:layout_weight="10"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selection"
+                    android:text="Check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtReg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="InValid"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="26dp"
+                android:layout_weight="12"
+                >
+                <EditText
+                    android:id="@+id/editReg4"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_card_background"
+                    android:drawableTint="@color/purple_700"
+                    android:layout_marginRight="12dp"
+                    android:hint="Lang:{a,b} / String End With aa or bb "
+                    android:layout_weight="10"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selection"
+                    android:text="Check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtReg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="InValid"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="26dp"
+                android:layout_weight="12"
+                >
+                <EditText
+                    android:id="@+id/editReg5"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_card_background"
+                    android:drawableTint="@color/purple_700"
+                    android:layout_marginRight="12dp"
+                    android:hint="To Check Email Address "
+                    android:layout_weight="10"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selection"
+                    android:text="Check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtReg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="InValid"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="26dp"
+                android:layout_weight="12"
+                >
+                <EditText
+                    android:id="@+id/editReg6"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_card_background"
+                    android:drawableTint="@color/purple_700"
+                    android:layout_marginRight="12dp"
+                    android:hint="To Check Pawword  Must have a-z/A-Z/0-9/any Symbol "
+                    android:layout_weight="10"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnReg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selection"
+                    android:text="Check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtReg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="InValid"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtErrorOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Its no valid " />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:text="NO PAIN NO GAIN" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
